@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Complex Form</title>
+</head>
+<body class="form">
+    <div class="form__title title">
+        <h1 class="title__heading heading">Account Settings</h1>
+    </div>
+    <div class="form__info info">
+        <div class="form__subtitle subtitle">
+            <div class="subtitle__logo logo">
+                <span class="logo__img img-logo">
+                    <img class="img" src="icons/icon-first.svg" alt="icon">
+                </span>
+                <h2 class="logo__title">Personal information</h2>
+            </div>
+            <p class="subtitle__par par">Fill in your personal data</p>
+        </div>
+        <div class="form__form form-main">
+            <form class="form__form-section form-section">
+                <span class="form-section__name">
+                    <span class="name">
+                        <label class="form__label label">First Name</label>
+                        <input class="form__input input"
+                            type="text"
+                            placeholder=""
+                            required
+                            minlength="2"
+                            maxlength="30">
+                    </span>
+                    <span class="name">
+                        <label class="form__label label">Last Name</label>
+                        <input class="form__input input"
+                            type="text"
+                            placeholder=""
+                            required
+                            minlength="2"
+                            maxlength="30">
+                    </span>
+                </span>
+                <span class="form-section__email">
+                    <span class="email">
+                        <label class="form__label label">Email</label>
+                        <input class="form__input input"
+                            type="email"
+                            placeholder=""
+                            required
+                            minlength="2"
+                            maxlength="30">
+                    </span>
+                    <span class="email">
+                        <label class="form__label label">Legal Gender</label>
+                        <select class="form__select select" name="gender" id="gender">
+                            <option value="1" selected>Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </span>
+                </span>
+            </form>
+        </div>
+    </div>
+    <div class="form__info info info--second">
+        <div class="form__subtitle subtitle">
+            <div class="subtitle__logo logo">
+                <span class="logo__img img-logo">
+                    <img class="img" src="icons/icon-second.svg" alt="icon">
+                </span>
+                <h2 class="logo__title">Work information</h2>
+            </div>
+            <p class="subtitle__par par">Basic information about your role</p>
+        </div>
+        <div class="form__form form-main">
+            <form class="form__form-section form-section form--second">
+                <span class="form-section__job">
+                    <span class="job">
+                        <label class="form__label label label--manager">Your Manager</label>
+                        <input class="form__input input input--manager"
+                            type="text"
+                            placeholder=""
+                            required
+                            minlength="2"
+                            maxlength="30">
+                    </span>
+                    <span class="job">
+                        <label class="form__label label">Department</label>
+                        <input class="form__input input"
+                            type="text"
+                            placeholder=""
+                            required
+                            minlength="2"
+                            maxlength="30">
+                    </span>
+                </span>
+                <span class="form-section__type">
+                    <span class="type__job">Job type</span>
+                    <span class="type__group">
+                        <label class="type__checkbox">
+                            <input class="checkbox" type="checkbox" checked>
+                            <span class="checkbox__button">
+                                <svg class="checkbox__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="4" fill="#1F7EF2"/>
+                                    <path d="M7.95456 12.8432L5.58865 10.4773C5.32274 10.2113 4.8932 10.2113 4.62729 10.4773C4.36138 10.7432 4.36138 11.1727 4.62729 11.4386L7.47729 14.2886C7.7432 14.5545 8.17274 14.5545 8.43865 14.2886L15.6523 7.07498C15.9182 6.80907 15.9182 6.37953 15.6523 6.11362C15.3864 5.84771 14.9568 5.84771 14.6909 6.11362L7.95456 12.8432Z" fill="white"/>
+                                </svg>
+                            </span>
+                            <span>Full-time</span>
+                        </label>
+                        <label class="type__checkbox">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox__button">
+                                <svg class="checkbox__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="4" fill="#1F7EF2"/>
+                                    <path d="M7.95456 12.8432L5.58865 10.4773C5.32274 10.2113 4.8932 10.2113 4.62729 10.4773C4.36138 10.7432 4.36138 11.1727 4.62729 11.4386L7.47729 14.2886C7.7432 14.5545 8.17274 14.5545 8.43865 14.2886L15.6523 7.07498C15.9182 6.80907 15.9182 6.37953 15.6523 6.11362C15.3864 5.84771 14.9568 5.84771 14.6909 6.11362L7.95456 12.8432Z" fill="white"/>
+                                </svg>
+                            </span>
+                            <span>Part-time</span>
+                        </label>
+                        <label class="type__checkbox">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox__button">
+                                <svg class="checkbox__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="4" fill="#1F7EF2"/>
+                                    <path d="M7.95456 12.8432L5.58865 10.4773C5.32274 10.2113 4.8932 10.2113 4.62729 10.4773C4.36138 10.7432 4.36138 11.1727 4.62729 11.4386L7.47729 14.2886C7.7432 14.5545 8.17274 14.5545 8.43865 14.2886L15.6523 7.07498C15.9182 6.80907 15.9182 6.37953 15.6523 6.11362C15.3864 5.84771 14.9568 5.84771 14.6909 6.11362L7.95456 12.8432Z" fill="white"/>
+                                </svg>
+                            </span>
+                            <span>Contract</span>
+                        </label>
+                        <label class="type__checkbox">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox__button">
+                                <svg class="checkbox__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="4" fill="#1F7EF2"/>
+                                    <path d="M7.95456 12.8432L5.58865 10.4773C5.32274 10.2113 4.8932 10.2113 4.62729 10.4773C4.36138 10.7432 4.36138 11.1727 4.62729 11.4386L7.47729 14.2886C7.7432 14.5545 8.17274 14.5545 8.43865 14.2886L15.6523 7.07498C15.9182 6.80907 15.9182 6.37953 15.6523 6.11362C15.3864 5.84771 14.9568 5.84771 14.6909 6.11362L7.95456 12.8432Z" fill="white"/>
+                                </svg>
+                            </span>
+                            <span>Freelance</span>
+                        </label>
+                    </span>
+                </span>
+            </form>
+        </div>
+    </div>
+    <div class="form__info info info--third">
+        <div class="form__subtitle subtitle">
+            <div class="subtitle__logo logo">
+                <span class="logo__img img-logo">
+                    <img class="img" src="icons/icon-third.svg" alt="icon">
+                </span>
+                <h2 class="logo__title">Notifications</h2>
+            </div>
+            <p class="subtitle__par par">Notifications keep you informed of the work you care about, whether you're at your desk or on the move.</p>
+        </div>
+        <div class="form__form form-main">
+            <form class="form__form-section form-section form--third">
+                <span class="form-section__about">
+                    <span class="type__notify">Notify me about...</span>
+                    <span class="type__radio">
+                        <input class="radio" type="radio" id="first" name="radio" checked>
+                        <label class="label--radio" for="first">All new messages</label>
+                    </span>
+                    <span class="type__radio">
+                        <input class="radio" type="radio" id="second" name="radio">
+                        <label class="label--radio" for="second">Direct messages, mentions & keywords</label>
+                    </span>
+                    <span class="type__radio">
+                        <input class="radio" type="radio" id="third" name="radio">
+                        <label class="label--radio" for="third">Nothing</label>
+                    </span>
+                </span>
+                <span class="form-section__notify">
+                    <label class="type__checkbox checkbox--third">
+                        <input class="checkbox" type="checkbox" checked>
+                        <span class="checkbox__button">
+                            <svg class="checkbox__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="4" fill="#1F7EF2"/>
+                                <path d="M7.95456 12.8432L5.58865 10.4773C5.32274 10.2113 4.8932 10.2113 4.62729 10.4773C4.36138 10.7432 4.36138 11.1727 4.62729 11.4386L7.47729 14.2886C7.7432 14.5545 8.17274 14.5545 8.43865 14.2886L15.6523 7.07498C15.9182 6.80907 15.9182 6.37953 15.6523 6.11362C15.3864 5.84771 14.9568 5.84771 14.6909 6.11362L7.95456 12.8432Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <span>Notify me about replies to threads I'm following</span>
+                    </label>
+                    <label class="type__checkbox checkbox--third">
+                        <input class="checkbox" type="checkbox">
+                        <span class="checkbox__button">
+                            <svg class="checkbox__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="4" fill="#1F7EF2"/>
+                                <path d="M7.95456 12.8432L5.58865 10.4773C5.32274 10.2113 4.8932 10.2113 4.62729 10.4773C4.36138 10.7432 4.36138 11.1727 4.62729 11.4386L7.47729 14.2886C7.7432 14.5545 8.17274 14.5545 8.43865 14.2886L15.6523 7.07498C15.9182 6.80907 15.9182 6.37953 15.6523 6.11362C15.3864 5.84771 14.9568 5.84771 14.6909 6.11362L7.95456 12.8432Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <span>Lorem ipsum dolor sit amet, consectetur </span>
+                    </label>
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

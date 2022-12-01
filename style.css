@@ -392,7 +392,7 @@
     }
 }
 
-.input--manager {
+.input:disabled {
     font-weight: 400;
     font-size: 1rem;
     line-height: 19px;
